@@ -33,7 +33,7 @@ create table product (
 );
 
 create table sale (
-    product_id int AUTO_INCREMENT,
+    product_id int,
     FOREIGN KEY (product_id)
         REFERENCES product(id)
         ON DELETE CASCADE,
